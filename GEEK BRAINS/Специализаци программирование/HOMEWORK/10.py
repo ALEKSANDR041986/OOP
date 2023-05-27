@@ -2,13 +2,13 @@
 # Определите минимальное число монеток, которые нужно перевернуть, чтобы все монетки были повернуты
 # вверх одной и той же стороной. Выведите минимальное количество монет, которые нужно перевернуть
 
-import random
+from random import randint
 n = int(input('введите количество монеток: '))
 array = [0]*n
 count0=int(0)
 count1=int(0)
 for i in range(n):
-    array[i] = random.randint(0,1)
+    array[i] = randint(0,1)
     print(array[i])
     if array[i]==0:
         count0+=1
