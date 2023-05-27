@@ -30,6 +30,7 @@ word = list(input('введите слово: '))  #создаем список
 print(word)
 for i in range(len(word)):
     for key, value in dictionary.items():
+            # if i in dictionary:
             if word[i].upper() == key:
                 summa = summa + value
 print(summa)
