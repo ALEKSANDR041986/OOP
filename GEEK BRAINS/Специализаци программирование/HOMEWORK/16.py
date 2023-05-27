@@ -17,11 +17,13 @@ count = int(input('количество элементов: '))
 for i in range(count):
     list_A.append(randint(1, 10))
 print(list_A)
-# list_B =set(list_A)
-# print(list_B)
+list_B =set(list_A)
+print(list_B)
 find_X = int(input())
 for i in range(len(list_A)):
     if find_X == list_A[i]:
         a+=1
 print(a)
+
+print(list_A.count(find_X))
 
